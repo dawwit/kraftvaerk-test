@@ -1,0 +1,17 @@
+.icon {
+  width: 28px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 0.75rem;
+}
+
+.icon.shuffle {
+  background-image: url('/icons/shuffle.svg');
+}
+
+.icon.sort {
+  background-image: url('/icons/sort.svg');
+}
