@@ -1,7 +1,7 @@
 (() => {
-  const tilesContainer = document.querySelector("#tiles");
-  const shuffleButton = document.querySelector("#shuffle");
-  const sortButton = document.querySelector("#sort");
+  const tilesContainer = document.getElementById("tiles");
+  const shuffleButton = document.getElementById("shuffle");
+  const sortButton = document.getElementById("sort");
 
   const tiles = Array.from({ length: 9 }, (_, i) => ({
     value: i + 1,
@@ -10,7 +10,10 @@
 
   const renderTiles = () => {
     tilesContainer.innerHTML = tiles
-      .map((tile) => `<div class="tile ${tile.color}"> ${tile.value} </div>`)
+      .map(
+        (tile) =>
+          `<div class="tile ${tile.color}"><span>${tile.value}</span></div>`
+      )
       .join("");
   };
 
