@@ -8,9 +8,9 @@
 }
 
 .icon.shuffle {
-  background-image: url("/icons/shuffle.svg");
+  background-image: url("./icons/shuffle.svg");
 }
 
 .icon.sort {
-  background-image: url("/icons/sort.svg");
+  background-image: url("./icons/sort.svg");
 }
